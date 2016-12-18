@@ -20,17 +20,36 @@
 	background-color: #27a9e3;
 	border-width: 0px;
 	border-radius: 3px;
+}
+
+QPushButton:pressed
+{
+	color: white;
+	background-color: yellow;
+	border-width: 0px;
+	border-radius: 3px;
+}
+
+QPushButton[pagematches = true]
+{
+	color: white;
+	background-color: red;
+	border-width: 0px;
+	border-radius: 3px;
 }</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>100</x>
       <y>0</y>
-      <width>541</width>
+      <width>571</width>
       <height>411</height>
      </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -40,6 +59,11 @@
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
       <string>Tab 2</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Page</string>
      </attribute>
     </widget>
    </widget>
@@ -57,10 +81,10 @@
       <number>3</number>
      </property>
      <property name="sizeConstraint">
-      <enum>QLayout::SetMinimumSize</enum>
+      <enum>QLayout::SetDefaultConstraint</enum>
      </property>
      <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="button1">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -78,14 +102,14 @@
        </property>
        <property name="iconSize">
         <size>
-         <width>55</width>
-         <height>55</height>
+         <width>16</width>
+         <height>16</height>
         </size>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="button2">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -103,14 +127,14 @@
        </property>
        <property name="iconSize">
         <size>
-         <width>55</width>
+         <width>16</width>
          <height>55</height>
         </size>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="button3">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
